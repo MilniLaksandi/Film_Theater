@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Feedback</title>
+	<link rel="stylesheet" type="text/css" href="feedback.css">
+</head>
+<body>
+    <!-- Put your HTML body text here -->
+    <!-- NAVIGATION SECTION -->
+    <header class="nav-bar">
+        <nav class="flex">
+            <img id="logo" src="images/logo.png" alt=" logo">
+            <ul>
+                <li><a class="active" href="main.html">Home</a></li>
+                <li><a href="thumbnail.html">Gallery</a></li>
+                <li><a href="Quiz.html">Quiz</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="AboutUs.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="outerbox">
+        <!-- Form  Box -->
+        <div class="boxB">
+            <h1>Feedback form</h1>
+
+            <!-- Conformation Box -->
+            <div class="xbox">
+                <div>
+                    <h2>Confirmation</h2>
+                    <div id="details" class="details"></div>
+                </div>
+                <div id="confirm">
+                    <table>
+                        <tr>
+                            <td><a class="button2" id="editBtn" onclick="editIt()">Edit</a></td>
+                            <td><a class="button2" id="sendBtn" onclick="sendIt()">Send</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="xbox">
+                <h2>Message Sent</h2>
+                <div class="details" style="margin-top: 8px;">
+
+                    Dear Sir/Madam<br><br>Thank you for taking the time to give us with such useful comments!<br><br>Best regards,<br>
+                    LUNAFLIX Management.
+
+                </div>
+                <a class="button2" id="okBtn" onclick="okButton()" style="margin-top: 40px;">OK</a>
+            </div>
+
+            <!-- Query form part -->
+            <form method="post" id="form" class="form" onsubmit="return validation()">
+
+                <label>Full Name</label>
+                <div class="field">
+                    <input type="text" placeholder="Type Your Full Name here" id="name">
+                    <div class="error"></div>
+
+                </div>
+
+                <label>Email Address</label>
+                <div class="field">
+                    <input type="text" placeholder="Type your email address in" id="email" class="">
+                    <div class="error"></div>
+
+                </div>
+
+                <label>Problem Type</label>
+                <div class="field">
+                    <select id="subject">
+                        <option value="default" disabled selected hidden>Choose your problem type from the list below...</option>
+                        <option value="Ticket bookings">Ticket bookings</option>
+                        <option value="Packages">Packages</option>
+                        <option value="Shop Items">Shop Items</option>
+                        <option value="Others">Others</option>
+                    </select>
+                    <div class="error"></div>
+
+                </div>
+
+                <label>Your Problem</label>
+                <div class="field">
+                    <textarea id="message" placeholder="Enter Your Text Here..." class=""></textarea>
+                    <div class="error"></div>
+
+                </div>
+
+
+                <div class="ratings">
+                    <label>Your level of satisfaction with our website.Score Us</label>
+                    <br> <br>
+                    <div>
+                        <input type="radio" id="rating-0" name="rating" value="0">
+                        <label class="radio-label" for="rating-0">0</label>
+                        <input type="radio" id="rating-1" name="rating" value="1">
+                        <label class="radio-label" for="rating-1">1</label>
+                        <input type="radio" id="rating-2" name="rating" value="2">
+                        <label class="radio-label" for="rating-2">2</label>
+                        <input type="radio" id="rating-3" name="rating" value="3">
+                        <label class="radio-label" for="rating-3">3</label>
+                        <input type="radio" id="rating-4" name="rating" value="4">
+                        <label class="radio-label" for="rating-4">4</label>
+                        <input type="radio" id="rating-5" name="rating" value="5">
+                        <label class="radio-label" for="rating-5">5</label>
+                        <input type="radio" id="rating-6" name="rating" value="6">
+                        <label class="radio-label" for="rating-6">6</label>
+                        <input type="radio" id="rating-7" name="rating" value="7">
+                        <label class="radio-label" for="rating-7">7</label>
+                        <input type="radio" id="rating-8" name="rating" value="8">
+                        <label class="radio-label" for="rating-8">8</label>
+                        <input type="radio" id="rating-9" name="rating" value="9">
+                        <label class="radio-label" for="rating-9">9</label>
+                        <input type="radio" id="rating-10" name="rating" value="10">
+                        <label class="radio-label" for="rating-10">10</label>
+                    </div>
+                </div>
+
+                <div class="button3">
+                    <button type="submit" id="subBt">Check Your Feedback</button>
+                </div>
+
+            </form>
+            <!-- Query form part finished -->
+
+
+        </div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="footerpart">
+            <div class="firstrow">
+                <div class="firstcolumn">
+                    <ul id="lunaicon">
+                        <li><img src="images/logo.png" width="200" height="180" alt="logo"></li>
+                    </ul>
+                </div>
+
+                <div class="socialMediaIcon">
+                    <a href="https://www.facebook.com/iitsl/" target="_blank"><img src="images/fb.webp" height="40" width="45" alt="facebook"></a>
+                    <a href="https://twitter.com/iitsrilanka?lang=en" target="_blank"><img src="images/twit.webp" height="40" width="45" alt="twitter"></a>
+                    <a href="https://www.instagram.com/iitlife/?hl=en" target="_blank"><img src="images/inst.webp" height="40" width="45" alt="instagram"></a>
+                    <a href="https://www.youtube.com/channel/UC02DMFclK9vaEdOIKSiaNkA" target="_blank"><img src="images/yout.webp" height="40" width="45" alt="youtube"></a>
+                </div>
+
+                <div class="Secondcolumn">
+                    <ul id="footerNav">
+                        <li><span style="margin-bottom: 20px;font-weight:bold;font-size:22px;">NAVIGATE</span></li>
+                        <li><a href="AboutUs.html">Site map</a></li>
+                        <li><a href="AboutUs.html">About us</a></li>
+                        <li></li>
+                        <li>Contact us-0117 444 222</li>
+                        <li>Email-lunaflix@gmail.com</li>
+                        <li>00300 Galle Rd, Colombo</li>
+                        <li>Sri lanka</li>
+                    </ul>
+                </div>
+
+                <div class="bottom" >
+                        <p>©Copyright LUNAFLIX 2023 All Rights Reserved.</p>
+                        <a href="pageeditor1.html"  style="z-index: 999;"><p class="viewpageeditor" style="text-align: left; padding-left: 18%;">
+                            View Page Editor
+                        </p></a>
+                </div>
+
+
+            </div>
+            <br><br>
+            <div><a href="#top" class="btn1">Back to top</a> </div>
+        </div>
+    </footer>
+
+    <!-- Java Script Part -->
+    <script src="feedback.js"></script>
+
+</body>
+</html>

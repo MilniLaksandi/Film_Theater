@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Thumbnail</title>
+		<meta charset = "utf-8" >
+		<link rel="stylesheet" href="thumbnailstyle.css"> 
+    </head>
+	<body id="body">
+	
+	<!-- NAVIGATION SECTION -->
+    <header class="nav-bar">
+        <nav class="flex">
+            <img id="logo" src="image/logo.png" alt=" logo">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a class="active" href="thumbnail.html">Gallery</a></li>
+                <li><a href="Quiz.html">Quiz</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="AboutUs.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+	
+	<div class="clicking">
+		<h1 id="heading">Welcome to Unveiling the Glamour of Sri Lankan Cinema</h1>
+		
+		<div class="selector">
+                    <select name="colorChange" id="colors" onchange="color()">
+						<option>Background Colour</option>
+                        <option value="#6E4A1F">Default</option>
+                        <option value="#581845 ">Dark Purple</option>
+                        <option value="#6A5841">Olive Drab</option>
+                        <option value="#7B3C2F ">Sepia</option>
+                        <option value="#0B1050">Prussian Blue</option>
+                    </select>
+					
+					<select name="fontChange" id="fontsize" onchange="updateFontSize()">
+                        <option>Font Size</option>
+						<option value="">Default</option>
+                        <option value="10px">Small</option>
+                        <option value="20px">Medium</option>
+                        <option value="30px">Large</option>
+                    </select>
+		</div>	
+	
+		<div class="imagecontainer">
+			<div class="gallery">
+				<div class="image">
+				<img  onmouseover="big(this)" onmouseout="normal(this)" src="image/screening.jpeg" alt="<u><h6>Screening Rooms</h6></u>
+				<p><h6>High-quality audio and projection technologies are provided in these spaces to create an immersive viewing environment. Modern projection systems, which are primarily digital, provide sharper and more vivid images than those produced by conventional film projectors. In order to improve the visual experience with 3D effects or HDR (High Dynamic Range) capabilities, we also utilize technologies like RealD 3D or Dolby Cinema.</h6></p>">
+				</div>
+				<div class="desc">Screening Rooms</div>
+			</div>
+			
+			<div class="gallery">
+				<div class="image">
+				<img  onmouseover="big(this)" onmouseout="normal(this)" src="image/seatings.jpg" alt="<u><h6>Comfortable Seatings</h6></u>
+				<p><h6>Customers can modify their seating position for maximum comfort with our flexible seats. A clear view of the screen is guaranteed by stadium-style seating, which elevates every row. A comfortable movie-watching experience is made possible by the plush, well-cushioned seats with lots of legroom.</h6></p>">
+				</div>
+				<div class="desc">Comfortable Seatings</div>
+			</div>
+			
+			<div class="gallery">
+				<div class="image">
+				<img  onmouseover="big(this)" onmouseout="normal(this)" src="image/stand.webp" alt="<u><h6>Concession Stands</h6></u>
+				<p><h6>The theatre experience would not be complete without the concession stand. We have broadened our menus to include a range of snacks, nachos, pretzels, gourmet popcorn flavours, and even healthier options like fruit cups and salads, in addition to standard goods like popcorn, candy, soda, and hot dogs. To satisfy adult audiences, we also provide alcoholic beverages. </h6></p>">
+				</div>
+				<div class="desc">Concession Stands</div>
+			</div>
+			
+			<div class="gallery">
+				<div class="image">
+				<img  onmouseover="big(this)" onmouseout="normal(this)" src="image/vip.webp" alt="<u><h6>VIP and Premimum Lounge</h6></u>
+				<p><h6>Our theatres' VIP and Premium Lounges provide upscale, luxury moviegoing experiences. The VIP Lounge features comfortable seating, attentive service, and a special gourmet menu, while the Premium Lounge provides higher levels of luxury and upscale concessions. These lounges offer superior comfort and individualized service to moviegoers desiring such amenities.
+				</h6></p>">
+				</div>
+				<div class="desc">VIP and Premimum Lounge</div>
+			</div>
+			
+			<div class="gallery">
+				<div class="image">
+				<img  onmouseover="big(this)" onmouseout="normal(this)" src="image/wheel.webp" alt="<u><h6>Wheelchair Accessibility</h6></u>
+				<p><h6>Wheelchair-accessible entrances, seats, and restrooms have been installed in our theatres to guarantee that clients with mobility issues can enjoy the theatre without any obstacles to their enjoyment.</h6></p>">
+				</div>
+				<div class="desc">Wheelchair Accessibility</div>
+			</div>
+		
+			<div class="gallery">
+				<div class="image">
+				<img  onmouseover="big(this)" onmouseout="normal(this)" src="image/sound.jpg" alt="<u><h6>Sound System</h6></u>
+				<p><h6>The sound system in our theatres improves the experience of watching a movie. Modern technology makes use of immersive and crystal-clear audio to bring every sound effect, line of dialogue, and musical score to life. The Sound System's accuracy and surround sound capabilities produce a gripping environment that pulls viewers into the movie's story and improves the entire cinematic experience. </h6></p>">
+				</div>
+				<div class="desc">Sound System</div>
+			</div>
+			
+			<div class="gallery">
+				<div class="image">
+				<img  onmouseover="big(this)" onmouseout="normal(this)" src="image/4D.webp" alt="<u><h6>3D and 4D Films</h6></u>
+				<p><h6>We provide cutting-edge 3D and 4D film experiences in our theatres that immerse viewers in the action. With 3D technology, audiences don specialized eyewear to experience breathtaking images that pop off the screen, giving the movie depth and realism. Additionally, with tactile sensations that coincide with the action on screen, our 4D movies raise the bar for moviegoing.  The state-of-the-art audio systems in our theatres enhance the pictures by guaranteeing that every sound surrounds the audience, creating a genuinely unforgettable cinematic experience.</h6></p>">
+				</div>
+				<div class="desc">3D and 4D Films </div>
+			</div>
+			
+			<div class="gallery">
+				<div class="image">
+				<img  onmouseover="big(this)" onmouseout="normal(this)" src="image/lobby.webp" alt="<u><h6>Looby</h6></u>
+				<p><h6> Moviegoers can unwind, converse, or wait before their showing in our lobby. In order to create a warm and enjoyable atmosphere, we have adorned the lobby with movie posters, marketing materials, and interactive displays.</h6></p>">
+				</div>
+				<div class="desc">Lobby</div>
+			</div>
+			
+			<div class="gallery">
+				<div class="image">
+				<img  onmouseover="big(this)" onmouseout="normal(this)" src="image/light.jpg" alt="<u><h6>Light System</h6></u>
+				<p><h6> Modern lighting systems in our theatres improve the movie-going experience. The lighting is precisely adjusted to offer the best brightness and clarity on the screen while fostering an inviting and engrossing environment for the audience. The lighting system makes sure that every frame is presented with accuracy and brilliance, capturing viewers' attention and bringing cinematic moments to life in an entirely novel way.</h6></p>">
+				</div>
+				<div class="desc">Light System</div>
+			</div>	
+		</div>	
+			
+		<div class="pop-up-image">
+				<span>&times;</span>
+				<img src="../images/jupiter.jpg" alt="">
+					<span class="pic-text"></span>
+		</div>		
+	</div>	
+	<script src="thumbnail.js"></script>
+	
+	<!-- FOOTER SECTION -->
+	<footer>
+		<div class="footerpart">
+			<div class="firstrow">
+				<div class="firstcolumn">
+					<ul id="lunaicon">
+						<li><img src="image/logo.png" width="200" height="180" alt="logo"></li>
+					</ul>
+				</div>
+	
+				<div class="socialMediaIcon">
+					<a href="https://www.facebook.com/iitsl/" target="_blank"><img src="image/fb.webp" height="40" width="45" alt="facebook"></a>
+					<a href="https://twitter.com/iitsrilanka?lang=en" target="_blank"><img src="image/twit.webp" height="40" width="45" alt="twitter"></a>
+					<a href="https://www.instagram.com/iitlife/?hl=en" target="_blank"><img src="image/inst.webp" height="40" width="45" alt="instagram"></a>
+					<a href="https://www.youtube.com/channel/UC02DMFclK9vaEdOIKSiaNkA" target="_blank"><img src="image/yout.webp" height="40" width="45" alt="youtube"></a>
+				</div>
+	
+				<div class="Secondcolumn">
+					<ul id="footerNav">
+						<li><span style="margin-bottom: 20px;font-weight:bold;font-size:22px;">NAVIGATE</span></li>
+						<li><a href="sitemap.html">Site map</a></li>
+						<li><a href="AboutUs.html">About us</a></li>
+						<li></li>
+						<li>Contact us-0117 444 222</li>
+						<li>Email-lunaflix@gmail.com</li>
+						<li>00300 Galle Rd, Colombo</li>
+						<li>Sri lanka</li>
+					</ul>
+				</div>
+	
+				<div class="bottom">
+					<p>©Copyright LUNAFLIX 2023 All Rights Reserved.</p>
+					<p class="viewpageeditor">
+					<a href="pageeditor.html">View Page Editor</a>
+					</p>
+				</div>
+	
+	
+			</div>
+			<br><br>
+			<div><a href="#top" class="btn1">Back to top</a> </div>
+		</div>
+	</footer>			
+	</body>
+</html>	
+		
+	

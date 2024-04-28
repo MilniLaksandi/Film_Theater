@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Quiz</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!-- NAVIGATION SECTION -->
+    <header class="nav-bar">
+        <nav class="flex">
+            <img id="logo" src="Images/Logo.jpeg" alt=" logo">
+            <ul>
+                <li><a class="active" href="main.html">Home</a></li>
+                <li><a href="thumbnail.html">Gallery</a></li>
+                <li><a href="Quiz.html">Quiz</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="AboutUs.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+	<div class="container">
+		<p><br><br><br><br><br></p>
+    	<h1>Quiz</h1>
+		<!--01-->
+        	<div>Question 01 - What is the First Sinhala Film in Sri Lanka ?</div>
+			
+			<div class="btn-grid">
+                <button class="btn" id="button1-1" onclick="checkAnswer1(this)">Kadawunu Poronduwa</button>
+				<button class="btn" id="button1-2" onclick="checkAnswer1(this)">Gamperaliya</button>
+				<button class="btn" id="button1-3" onclick="checkAnswer1(this)">Madol Doowa</button>
+				<button class="btn" id="button1-4" onclick="checkAnswer1(this)">Kali Yugaya</button>
+			</div>
+		<!--02-->
+        	<div>Question 02 - Who is the Father of Sri Lanka Cinema Industry ?</div>
+			
+			<div class="btn-grid">
+                <button class="btn" id="button2-1" onclick="checkAnswer2(this)">Gamini Fonseka</button>
+				<button class="btn" id="button2-2" onclick="checkAnswer2(this)">Vijaya Kumarathunga</button>
+				<button class="btn" id="button2-3" onclick="checkAnswer2(this)">Lester James Peries</button>
+				<button class="btn" id="button2-4" onclick="checkAnswer2(this)">Joe Abewickrama</button>
+			</div>
+		<!--03-->
+		<div>Question 03 - What is the First Colour Film in Sri Lanka ?</div>
+			
+		<div class="btn-grid">
+			<button class="btn" id="button3-1" onclick="checkAnswer3(this)">Sooriya Arana</button>
+			<button class="btn" id="button3-2" onclick="checkAnswer3(this)">Ranmuthu Duwa</button>
+			<button class="btn" id="button3-3" onclick="checkAnswer3(this)">Madol Doowa</button>
+			<button class="btn" id="button3-4" onclick="checkAnswer3(this)">Kadawunu Poronduwa</button>
+		</div>
+		<!--04-->
+			<div>Question 04 - Who was the First Actress in Sri Lanka ?</div>
+			
+			<div class="btn-grid">
+				<button class="btn" id="button4-1" onclick="checkAnswer4(this)">Rukmani Devi</button>
+				<button class="btn" id="button4-2" onclick="checkAnswer4(this)">Malani Fonseka</button>
+				<button class="btn" id="button4-3" onclick="checkAnswer4(this)">Sumitra Peries</button>
+				<button class="btn" id="button4-4" onclick="checkAnswer4(this)">Nanda Malani</button>
+			</div>
+		<!--05-->
+        	<div>Question 05 - Who is the First Female Film Director in Sri Lanka ?</div>
+			
+			<div class="btn-grid">
+                <button class="btn" id="button5-1" onclick="checkAnswer5(this)">Inoka Sathyangani</button>
+				<button class="btn" id="button5-2" onclick="checkAnswer5(this)">Suba Sivakumaran</button>
+				<button class="btn" id="button5-3" onclick="checkAnswer5(this)">Sumitra Peries</button>
+				<button class="btn" id="button5-4" onclick="checkAnswer5(this)">Malani Fonseka</button>
+			</div>
+		<!--06-->
+			<div>Question 06 - Which Country has Most Cinema Halls ?</div>
+			
+			<div class="btn-grid">
+				<button class="btn" id="button6-1" onclick="checkAnswer6(this)">India</button>
+				<button class="btn" id="button6-2" onclick="checkAnswer6(this)">China</button>
+				<button class="btn" id="button6-3" onclick="checkAnswer6(this)">USA</button>
+				<button class="btn" id="button6-4" onclick="checkAnswer6(this)">Italy</button>
+			</div>
+		<!--07-->
+        	<div>Question 07 - Which language has Most Number of Movies?</div>
+			
+			<div class="btn-grid">
+                <button class="btn" id="button7-1" onclick="checkAnswer7(this)">Tamil</button>
+				<button class="btn" id="button7-2" onclick="checkAnswer7(this)">Japanese</button>
+				<button class="btn" id="button7-3" onclick="checkAnswer7(this)">French</button>
+				<button class="btn" id="button7-4" onclick="checkAnswer7(this)">English</button>
+			</div>
+		<!--08-->
+        	<div>Question 08 - What City is used Most in Movies?</div>
+			
+			<div class="btn-grid">
+                <button class="btn" id="button8-1" onclick="checkAnswer8(this)">Berlin</button>
+				<button class="btn" id="button8-2" onclick="checkAnswer8(this)">New York</button>
+				<button class="btn" id="button8-3" onclick="checkAnswer8(this)">Mumbai</button>
+				<button class="btn" id="button8-4" onclick="checkAnswer8(this)">Landon</button>
+			</div>
+		<!--09-->
+        	<div>Question 09 - Which Country has the Most Movies?</div>
+			
+			<div class="btn-grid">
+                <button class="btn" id="button9-1" onclick="checkAnswer9(this)">USA</button>
+				<button class="btn" id="button9-2" onclick="checkAnswer9(this)">China</button>
+				<button class="btn" id="button9-3" onclick="checkAnswer9(this)">UKA</button>
+				<button class="btn" id="button9-4" onclick="checkAnswer9(this)">India</button>
+			</div>
+		<!--10-->
+			<div>Question 10 - Which country has the largest number of films per Year ?</div>
+			
+			<div class="btn-grid">
+				<button class="btn" id="button10-1" onclick="checkAnswer10(this)">USA</button>
+				<button class="btn" id="button10-2" onclick="checkAnswer10(this)">China</button>
+				<button class="btn" id="button10-3" onclick="checkAnswer10(this)">India</button>
+				<button class="btn" id="button10-4" onclick="checkAnswer10(this)">Japan</button>
+			</div>
+		
+				
+		<!--popup-->
+
+		<div id="overlay"></div>
+		<div id="popup">
+			<div class="popupcontrols">
+				<span id="popupclose">X</span>
+			</div>
+			<div class="popupcontent">
+				<h3><b>Congratulations, Quiz Completed!</b></h3>
+				<p>Questions: 10</p>
+				<p id="rslt">  </p>
+				<p id="rslt2">  </p>
+			</div>
+		</div>
+		
+		<!--timer-->
+			<div class="top-bar">
+				<p id="timer">Time remaining: 60 seconds</p>
+				<div id="maincontent">
+					<button class="btn" type="submit" id="submit-btn" value="Submit">Submit</button>
+				</div>
+			</div>
+
+    </div>
+<!-- FOOTER SECTION -->
+<footer>
+    <div class="footerpart">
+        <div class="firstrow">
+            <div class="firstcolumn">
+                <ul id="lunaicon">
+                    <li><img src="Images/Logo.jpeg" width="200" height="180" alt="logo"></li>
+                </ul>
+            </div>
+
+            <div class="socialMediaIcon">
+                <a href="https://www.facebook.com/iitsl/" target="_blank"><img src="Images/Facebook.jpeg" height="40" width="45" alt="facebook"></a>
+                <a href="https://twitter.com/iitsrilanka?lang=en" target="_blank"><img src="Images/Twitter.jpeg" height="40" width="45" alt="twitter"></a>
+                <a href="https://www.instagram.com/iitlife/?hl=en" target="_blank"><img src="Images/Insta.jpeg" height="40" width="45" alt="instagram"></a>
+                <a href="https://www.youtube.com/channel/UC02DMFclK9vaEdOIKSiaNkA" target="_blank"><img src="Images/Youtube.jpeg" height="40" width="45" alt="youtube"></a>
+            </div>
+
+            <div class="Secondcolumn">
+                <ul id="footerNav">
+                    <li><span style="margin-bottom: 20px;font-weight:bold;font-size:22px;">NAVIGATE</span></li>
+                    <li><a href="sitemap.html">Site map</a></li>
+                    <li><a href="AboutUs.html">About us</a></li>
+                    <li></li>
+                    <li>Contact us-0117 444 222</li>
+                    <li>Email-lunaflix@gmail.com</li>
+                    <li>00300 Galle Rd, Colombo.</li>
+                    <li>Sri Lanka</li>
+                </ul>
+            </div>
+
+            <div class="bottom">
+                <p> ©Copyright LUNAFLIX 2023 All Rights Reserved.</p>
+                <p class="viewpageeditor">
+                <a href="pageeditor.html">View Page Editor</a>
+                </p>
+            </div>
+
+        </div>
+        <br><br>
+        <div><a href="#top" class="btn1">Back to Top</a> </div>
+    </div>
+</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
